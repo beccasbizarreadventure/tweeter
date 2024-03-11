@@ -2,17 +2,17 @@
   display: flex;
   width: 100%;
   height: 120px;
+  color: #FFFFFF;
   background-color: #4056A1;
   flex-direction: row;
-  padding: 1.5em;
+  padding: 0 1.5em;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-title {
-  display: flex;
-  color: #FFFFFF;
   font-size: 42px;
-  align-items: center;
+  font-family: 'Bungee', sans-serif;
 }
 
 .text-icon-container {
@@ -22,7 +22,6 @@
 }
 
 .nav-text {
-  color: #FFFFFF;
   font-size: 24px;
 }
 
