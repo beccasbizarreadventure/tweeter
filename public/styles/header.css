@@ -1,4 +1,4 @@
-.main-header {
+header {
   display: flex;
   margin-top: 120px;
   justify-content: center;
@@ -10,7 +10,7 @@
   background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
 }
 
-.username h2 {
+div.username h2 {
   margin-top: 0%;
   color: #ffffff;
 }
