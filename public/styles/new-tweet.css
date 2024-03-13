@@ -2,26 +2,23 @@ section.new-tweet {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     background-color: inherit;
 }
 
 label {
   display: inline-flex;
-  padding-top: 50px;
-  padding-bottom: 5px;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 10px;
   font-weight: 600;
 }
 
 textarea {
   width: 100%;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  border-top-width: 4px;
-  border-top-color: #545149;
+  border: none;
   background-color: inherit;
   resize: none;
+  border-top: 5px solid #545149;
 }
 
 div.tweet-box {
