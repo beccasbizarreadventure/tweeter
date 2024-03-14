@@ -9,8 +9,9 @@ label {
   display: inline-flex;
   width: 100%;
   padding-top: 70px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-weight: 600;
+  font-size: 26px;
 }
 
 textarea {
@@ -19,6 +20,8 @@ textarea {
   background-color: inherit;
   resize: none;
   border-top: 5px solid #545149;
+  padding: 10px;
+  color:#545149;
 }
 
 div.tweet-box {
