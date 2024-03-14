@@ -30,6 +30,10 @@ div.tweet-box {
   font-family: 'Bungee', sans-serif;
 }
 
+.max-exceeded {
+  color:red;
+}
+
 button {
   padding: 0.6em 1em;
   border: 4px solid #4056A1;
