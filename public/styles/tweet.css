@@ -1,4 +1,4 @@
-article {
+article.tweet {
   display: flex;
   width: 100%;
   background-color: inherit;
@@ -6,9 +6,10 @@ article {
   font-weight: 400;
   border: 5px solid #545149;
   padding: 1.5em;
+  margin-bottom: 70px;
 }
 
-article:hover {
+article.tweet:hover {
   box-shadow: 10px 10px #C5CBE3;
 }
 
@@ -20,13 +21,13 @@ header.tweet-header {
   padding-right: 0.75em;
 }
 
-section.user-info {
+div.user-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-div.username {
+span.handle {
   font-weight: 600;
   color: #C5CBE3;
 }
@@ -54,14 +55,14 @@ footer {
   padding-right: 0.75em;
 }
 
-div.date {
+span.date {
   font-size: 0.75em;
 }
 
-div.icons {
+span.icons {
   color: #4056A1;
 }
 
-div.icons i:hover {
+span.icons i:hover {
   color: #D79922;
 }
