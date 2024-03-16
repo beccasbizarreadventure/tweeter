@@ -12,10 +12,17 @@ article:hover {
   box-shadow: 10px 10px #C5CBE3;
 }
 
+header.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
 section.user-info {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -24,10 +31,18 @@ div.username {
   color: #C5CBE3;
 }
 
+img.user-icon {
+  width: 64px;
+  height: 64px;
+  margin-right: 0.5em;
+}
+
 div.posted-tweet {
   font-weight: 600;
   padding-top: 35px;
   padding-bottom: 35px;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
 footer {
@@ -35,6 +50,8 @@ footer {
   justify-content: space-between;
   border-top: 5px solid #545149;
   padding-top: 10px;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
 div.date {
