@@ -19,7 +19,7 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /*
@@ -40,11 +40,5 @@ h1 {
 h2 {
   font-size: 1.75em;
   font-family: 'Source Sans 3', sans-serif;
-  font-weight: 300;
-}
-
-h4 {
-  font-size: 0em;
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }

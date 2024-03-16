@@ -1,8 +1,8 @@
 section.new-tweet {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: inherit;
 }
 
 label {
@@ -28,6 +28,7 @@ div.tweet-box {
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee', sans-serif;
+  padding-bottom: 70px;
 }
 
 .max-exceeded {
