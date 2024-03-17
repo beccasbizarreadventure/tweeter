@@ -8,7 +8,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1710452797677
+    "created_at": 1710462265045
   },
   {
     "user": {
@@ -19,6 +19,17 @@
     "content": {
       "text": "Je pense , donc je suis"
     },
-    "created_at": 1710539197677
+    "created_at": 1710548665045
+  },
+  {
+    "user": {
+      "name": "Levi Bunny",
+      "avatars": "/images/rabbit_12339224 (2).png",
+      "handle": "BigBoy"
+    },
+    "content": {
+      "text": "Where is breakfast? &#128530;"
+    },
+    "created_at": "10 days ago"
   }
 ]
