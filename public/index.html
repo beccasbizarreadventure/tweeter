@@ -40,17 +40,17 @@
     <!--  Header Code   -->
     <header class="main-header">
       <div class="profile-picture">
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png"> 
       </div>
       <div class="username">
-          <h2><b>Laurel&#160;</b> Bunny</h2>
+        <h2><b>Laurel&#160;</b> Bunny</h2>
       </div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form action="/tweets/" method="POST">
+        <form id="postTweet" action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div class = "tweet-box">

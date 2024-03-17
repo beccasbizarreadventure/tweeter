@@ -39,5 +39,18 @@ const renderTweets = (tweets) => {
   }
 };
 
-renderTweets(data);
+$( "#postTweet" ).on( "submit",( event ) => {
+  event.preventDefault();
+  let formData = ( $( "#postTweet" ).serialize() );
+
+  $.ajax({
+    type: "POST",
+    url: "/tweets/",
+    data: formData,
+    success: (response) => {
+      console.log(response);
+    }
+  })
+});
+
 });
