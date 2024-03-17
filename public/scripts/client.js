@@ -20,7 +20,7 @@ const createTweetElement = (tweet) => {
       <p>${tweet.content.text}</p>
     </div>
     <footer>
-      <span class="date">${new Date(tweet.created_at).toLocaleString()}</span>
+      <span class="date">${timeago.format(Date.now() - (tweet.created_at))}</span>
       <span class="icons">
       <i class="fa-solid fa-font-awesome"></i>
       <i class="fa-solid fa-retweet"></i>
@@ -52,5 +52,16 @@ $( "#postTweet" ).on( "submit",( event ) => {
     }
   })
 });
+
+const loadtweets = () => {
+  $.ajax({
+    type: "GET",
+    url: "/tweets/",
+    data: 'json',
+    success: (response) => {
+      renderTweets(response);
+    }
+  })
+}
 
 });
