@@ -41,16 +41,27 @@ const renderTweets = (tweets) => {
 
 $( "#postTweet" ).on( "submit",( event ) => {
   event.preventDefault();
+  const textCount = $('#tweet-text');
+  const textLength = (textCount.val().length);
+  if (textLength === 0) {
+    alert("No text in post body");
+    return;
+  }
+  if (textLength >= 140) {
+    alert("Too many characters");
+    return;
+  }
   let formData = ( $( "#postTweet" ).serialize() );
 
   $.ajax({
     type: "POST",
     url: "/tweets/",
     data: formData,
-    success: (response) => {
-      console.log(response);
-    }
-  })
+  }).done((response) => {
+   console.log(response);
+  }).fail((error) => {
+   alert(error);
+  });
 });
 
 const loadtweets = () => {
