@@ -63,12 +63,12 @@ $( "#postTweet" ).on( "submit",( event ) => {
     type: "POST",
     url: "/tweets/",
     data: formData,
-    success: (response) => {
+  }).done((response) => {
       loadtweets(response);
-    },
-    error: (error) => {
+      $('#tweet-text').val('');
+      $('.counter').text('140');
+  }).fail((error) => {
       console.error(error);
-    }
   });
 });
 
