@@ -42,7 +42,7 @@ const renderTweets = (tweets) => {
 $( "#postTweet" ).on( "submit",( event ) => {
   event.preventDefault();
   const textCount = $('#tweet-text');
-  const textLength = (textCount.val().length);
+  const textLength = (textCount.val().trim().length);
   if (textLength === 0) {
     alert("No text in post body");
     return;
@@ -57,10 +57,12 @@ $( "#postTweet" ).on( "submit",( event ) => {
     type: "POST",
     url: "/tweets/",
     data: formData,
-  }).done((response) => {
-   console.log(response);
-  }).fail((error) => {
-   alert(error);
+    success: (response) => {
+      loadtweets(response);
+    },
+    error: (error) => {
+      console.error(error);
+    }
   });
 });
 
