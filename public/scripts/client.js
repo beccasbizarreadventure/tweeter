@@ -39,6 +39,7 @@ const createTweetElement = (tweet) => {
 };
 
 const renderTweets = (tweets) => {
+  $('.tweet-container').empty();
   for (entry of tweets) {
     let createdTweet = createTweetElement(entry);
     $('.tweet-container').prepend(createdTweet);
@@ -63,11 +64,11 @@ $( "#postTweet" ).on( "submit",( event ) => {
     type: "POST",
     url: "/tweets/",
     data: formData,
-  }).done((response) => {
+  }).then((response) => {
       loadtweets(response);
       $('#tweet-text').val('');
       $('.counter').text('140');
-  }).fail((error) => {
+  }).catch((error) => {
       console.error(error);
   });
 });
@@ -76,9 +77,9 @@ const loadtweets = () => {
   $.ajax({
     type: "GET",
     url: "/tweets/",
-  }).done((response) => {
+  }).then((response) => {
     renderTweets(response);
-  }).fail((error) => {
+  }).catch((error) => {
     console.error(error);
   });
 }
