@@ -6,6 +6,8 @@
 
 $(document).ready(function() {
 
+$(".errorText").hide()
+
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -51,11 +53,17 @@ $( "#postTweet" ).on( "submit",( event ) => {
   const textCount = $('#tweet-text');
   const textLength = (textCount.val().trim().length);
   if (textLength === 0) {
-    alert("No text in post body");
+    $("#errorEmptyText").slideDown(400, function() {
+      setTimeout(() => { $("#errorEmptyText").slideUp(400);
+      }, 1000);
+    });
     return;
   }
   if (textLength >= 140) {
-    alert("Too many characters");
+    $("#errorTooMuchText").slideDown(400, function() {
+      setTimeout(() => { $("#errorTooMuchText").slideUp(400);
+      }, 1000);
+    });
     return;
   }
   let formData = ( $( "#postTweet" ).serialize() );

@@ -56,6 +56,8 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <div class= errorText id="errorEmptyText"><i class="fa-solid fa-circle-exclamation"></i>&#160;&#160;Please enter text</div>
+        <div class= errorText id="errorTooMuchText"><i class="fa-solid fa-circle-exclamation"></i>&#160;&#160;Tweet exceeds character limit</div>
         <form id="postTweet" action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
