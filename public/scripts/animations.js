@@ -1,3 +1,5 @@
+// Hover animation for double arrow in nav bar //
+
 $(document).ready(function() {
 
 $('i.nav-icon').hover(function() {

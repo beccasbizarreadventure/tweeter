@@ -1,3 +1,5 @@
+// New tweet character limit count down//
+
 $(document).ready(function() {
   const textCount = $('#tweet-text');
 

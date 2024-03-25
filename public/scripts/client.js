@@ -6,6 +6,8 @@
 
 $(document).ready(function() {
 
+// Function to prevent users imputting unsafe text that would break the page//
+
 $(".errorText").hide()
 
 const escape = function (str) {
@@ -13,6 +15,8 @@ const escape = function (str) {
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+
+// Formatting framework for new text published //
 
 const createTweetElement = (tweet) => {
   const $tweet = $(`
@@ -40,6 +44,8 @@ const createTweetElement = (tweet) => {
   return $tweet;
 };
 
+// Add new tweet to page //
+
 const renderTweets = (tweets) => {
   $('.tweet-container').empty();
   for (entry of tweets) {
@@ -47,6 +53,8 @@ const renderTweets = (tweets) => {
     $('.tweet-container').prepend(createdTweet);
   }
 };
+
+// Submit post event and error handling. Post submission without refreshing page // 
 
 $( "#postTweet" ).on( "submit",( event ) => {
   event.preventDefault();
@@ -80,6 +88,8 @@ $( "#postTweet" ).on( "submit",( event ) => {
       console.error(error);
   });
 });
+
+// Load tweet data from /tweets page //
 
 const loadtweets = () => {
   $.ajax({
