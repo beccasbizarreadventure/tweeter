@@ -8,7 +8,6 @@ section.new-tweet {
 label {
   display: inline-flex;
   width: 100%;
-  padding-top: 70px;
   padding-bottom: 20px;
   font-weight: 600;
   font-size: 26px;
@@ -64,3 +63,9 @@ button {
   background-color: #4056A1;
   color: white;
  }
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  label {
+    padding-top: 70px;
+  }
+}
