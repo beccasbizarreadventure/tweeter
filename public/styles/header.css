@@ -14,13 +14,13 @@ div.username h2 {
   color: #ffffff;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
   header.main-header {
     margin-top: 120px;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1080px) {
   header.main-header {
    width: 30em;
    height: 20em;

@@ -43,7 +43,7 @@ h2 {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1080px) {
   section.header-main {
     display: flex;
     flex-direction: row;
@@ -52,6 +52,6 @@ h2 {
     margin-right: 5em;
   }
   main {
-    padding-left: 15em;
+    padding-left: 25%;
   }
 }

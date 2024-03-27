@@ -24,7 +24,7 @@ i.nav-icon {
   padding-top: 0.5em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
   nav {
     background-color: #D79922;
     background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
